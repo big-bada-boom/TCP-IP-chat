@@ -58,7 +58,9 @@ class Server():
                 self.message_to_send = (self.message.encode(), self.to_this_user)
             else:
                 self.message_to_send = (('User ' + '"' + str(self.username) + '"' 
-                                        + ' not in chat!').encode(), self.address)
+                                        + ' not in chat!' 
+                                        + ' Enter "\e[username] [text]"' 
+                                        + ' to send private message.').encode(), self.address)
             self.sock.sendto(*self.message_to_send)
 
         else:

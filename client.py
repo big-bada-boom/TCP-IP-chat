@@ -1,8 +1,11 @@
 import socket
 import threading
 
-print('r"\users" to view a list of online users')
-print('r"\e[username] [text]" to send private message')
+print('\nWelcome to kechat!')
+print('\n-----------------------------------------------------')
+print(r'Enter "\users" to view a list of online users')
+print(r'Enter "\e[username] [text]" to send private message')
+print('-----------------------------------------------------\n')
 
 def read_soket():
     while True:
