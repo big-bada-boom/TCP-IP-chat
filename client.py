@@ -1,7 +1,7 @@
 import socket
 import threading
 
-print('"\users" to view a list of online users')
+print('r"\users" to view a list of online users')
 print('r"\e[username] [text]" to send private message')
 
 def read_soket():
